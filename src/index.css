@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+	font-family: 'Neue Haas Grotesk Display Pro', serif;
+}
+
+body {
+	background-color: #ffffff;
+	/* background-image: url('./../public/imagenes/backgroundImage/PapelTapiz_2_Oscuro.jpg'); */
+	background-size: cover;
+	background-position: center;
+	font-family: 'Neue Haas Grotesk Display Pro', serif;
+	font-size: 20px;
+}
+
+/* -----------------------------------
+           Background 
+ -----------------------------------*/
+.bg-Royal {
+	background-color: #0c1835;
+}
+.bg-secondary {
+	background-color: #ffffff;
+}
+.bg-resaltar {
+	background-color: #6d7743;
+}
+
+.bg-decorativo {
+	background-color: #b08848;
+}
+/* -----------------------------------
+           Iconos 
+ -----------------------------------*/
+.icono-personalizado {
+	color: #0c1835;
+	font-size: 65px;
+}
+
+.icono-personalizado-secondary {
+	color: #ffffff;
+	font-size: 65px;
+}
+
+/* -----------------------------------
+           Textos 
+ -----------------------------------*/
+.text-Royal {
+	color: #0c1835;
+}
+
+.text-Royal-secondary {
+	color: #ffffff;
+}
+
+.text-resaltar {
+	color: #6d7743;
+}
+
+.text-decorativo {
+	color: #b08848;
+}
+
+/* Inputs */
+.text-label {
+	color: black !important;
+	font-size: 16;
+}
+
+.text-error {
+	color: red !important;
+	font-size: 8;
+}
+
+/* -----------------------------------
+           Bordes 
+ -----------------------------------*/
+
+.border-Royal-resaltar {
+	border-color: #6d7743;
+}
+
+.loading {
+	z-index: 99;
+}
+
+/* carousel-custom.css */
+.carousel-image {
+	max-width: 100%;
+	height: auto;
+}
+
+.small-text {
+	font-size: 16px;
+}
+
+.enlarged {
+	z-index: 99;
+	width: 80%;
+	max-width: 1000px;
+	height: 65%;
+	max-height: 400;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -35%);
+}
+
+/* -----------------------------------
+           Header 
+ -----------------------------------*/
+
+.hover-effect {
+	position: relative;
+	color: #0c1835; /* Color inicial del texto */
+	transition: color 1s ease-in-out; /* Transición para el color */
+}
+
+.hover-effect:hover {
+	color: #6d7743; /* Color del texto al hacer hover (ejemplo: azul) */
+}
+
+.hover-effect::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: #6d7743; /* Color de la línea */
+	bottom: 0;
+	left: 0;
+	transition: width 1s ease-in-out; /* Transición para la línea */
+}
+
+.hover-effect:hover::after {
+	width: 100%; /* Línea se extiende al 100% */
+}
+
+/* -----------------------------------
+           Amenities - Carousel 
+ -----------------------------------*/
+/* Personaliza el color y tamaño de las flechas de navegación */
+.slick-prev::before,
+.slick-next::before {
+	color: #0c1835 !important; /* Asegura que el color se aplique */
+	font-size: 24px; /* Ajusta el tamaño de las flechas */
+	opacity: 1; /* Asegura que las flechas sean visibles */
+}
+
+/* Si quieres centrar verticalmente las flechas y ajustar la posición */
+.slick-prev {
+	left: -30px; /* Ajusta la posición horizontal izquierda */
+}
+
+.slick-next {
+	right: -30px; /* Ajusta la posición horizontal derecha */
+}
+
+/* Ajustes de tamaño del carrusel */
+.slick-slider {
+	margin: 0 auto;
+}
+
+/* Ajustes generales para el hover */
+.amenity-hover {
+	transition: transform 0.3s ease, background-color 0.3s ease,
+		box-shadow 0.3s ease;
+}
+
+.amenity-hover:hover {
+	transform: scale(1.1);
+	background-color: #0b7ebb; /* Azul claro */
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Aumentar tamaño del item central */
+.slick-center .amenity-hover {
+	transform: scale(1.5); /* Aumenta el tamaño 1.5 veces */
+	transition: transform 0.3s ease-in-out; /* Añadir transición para suavizar el cambio */
+}
+
+/* -----------------------------------
+             SweetAlert2
+-----------------------------------*/
+
+/* Personalización del botón de SweetAlert2 */
+.btn-custom {
+	background-color: #6d7743; /* Color de fondo */
+	color: white; /* Color del texto */
+	border-radius: 8px; /* Bordes redondeados */
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+	background-color: #b08848; /* Color de fondo al pasar el mouse */
+}
