@@ -5,8 +5,10 @@ import Header from '../components/landing/Secciones/Header';
 import Contenido from '../components/landing/Secciones/Contenido';
 import Contenido_Izq from '../components/landing/Secciones/Contenido_Izq';
 import MasterPlan from '../components/landing/Secciones/MasterPlan';
+import Gallery from '../components/landing/Secciones/Gallery';
 import Form from '../components/landing/Secciones/Form';
 import Footer from '../components/landing/Secciones/Footer';
+import Carousel from '../components/landing/Secciones/Carousel';
 import GrupoDesarrollador from '../components/landing/Secciones/GrupoDesarrollador';
 import ExtractoComercial from '../components/landing/Secciones/ExtractoComercial';
 import Textos from '../components/constantes/Textos';
@@ -73,6 +75,13 @@ const HomePages = () => {
 					epigrafe={Textos.extratoComercial.epigrafe}
 				/>
 			</div>
+
+			{/* <div
+				id='gallery'
+				className='relative w-full h-full landscapes:h-full overflow-hidden'>
+				<Gallery />
+				<Carousel />
+			</div> */}
 
 			<div className='flex justify-center items-center bg-white py-12 w-full h-screen'>
 				<div
